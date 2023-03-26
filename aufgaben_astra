@@ -19,3 +19,4 @@ absolviert? (Mission)
 
 7. Erstellen Sie eine alphabetische Liste aller noch lebenden Raumfahrer mit deren
 Geburtsdatum. (Raumfahrer)
+  select * from raumfahrer order by name
