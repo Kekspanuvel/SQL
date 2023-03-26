@@ -1,1 +1,19 @@
+// Internetseite: https://www.sachsen.schule/~astra2013/
 
+1. Welchen Durchmesser hat der Jupiter? (Planet)
+select durchmesser from planet where name="jupiter"
+
+2. Wie viele Monde hat der Saturn? (Mond,Planet)
+select count(name) from mond where id_planet like (select id_planet from planet where name="Saturn")
+
+4. Welche Stoffe enthält die Atmosphäre der Erde in welchen Anteilen? (Stoff, Atmosphäre)
+SELECT name,formel,anteil from atmosphaere, stoff where id_planet like (select id_planet from planet where name="Erde")
+
+5. Welche Eigenschaften werden Menschen zugeschrieben, die im Sternbild Löwe (Loewe)
+geboren sind? (Horoskop, Sternbild)
+
+6. Welche Weltraummissionen mit welchen besonderen Ereignissen wurden mit Wostok-Raketen
+absolviert? (Mission)
+
+7. Erstellen Sie eine alphabetische Liste aller noch lebenden Raumfahrer mit deren
+Geburtsdatum. (Raumfahrer)
