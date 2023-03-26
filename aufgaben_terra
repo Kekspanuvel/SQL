@@ -10,3 +10,6 @@
   
 4. Gesucht sind alle Berge der Alpen (Beachten Sie, dass die Alpen in Teilgebirge aufgegliedert sind.
   SELECT B_NAME, GEBIRGE FROM BERG WHERE GEBIRGE LIKE '%lpen'
+
+5. Gesucht sind alle Flüsse (Name), die in die Ostsee oder Nordsee münden und über 1000 km lang sind.
+  SELECT F_NAME from FLUSS WHERE (MEER ="Ostsee" or MEER="Nordsee") and LAENGE>1000
