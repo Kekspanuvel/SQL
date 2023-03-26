@@ -1,1 +1,9 @@
-
+SELECT CustomerName, ContactName, Country FROM Customers WHERE Country="UK"
+SELECT * FROM Customers WHERE Country="France" or Country="Spain"
+SELECT City , Country FROM Customers ORDER by City
+SELECT * FROM Employees order by LastName DESC
+Select * FROM Employees WHERE EmployeeID>=1 and EmployeeID<=4
+Select SupplierName , City, Country FROM Suppliers WHERE Country LIKE 'U%'
+Select * FROM Products WHERE Price>20 and Price<50
+Select MAX(Price) FROM Products
+Select * From Categories WHERE CategoryID IN (2, 4, 6)
