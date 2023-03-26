@@ -1,1 +1,2 @@
-
+1. Ermitteln Sie die Namen aller Kontinente.
+  SELECT K_NAME FROM KONTINENT 
