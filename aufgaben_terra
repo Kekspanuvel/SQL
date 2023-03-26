@@ -13,3 +13,6 @@
 
 5. Gesucht sind alle Flüsse (Name), die in die Ostsee oder Nordsee münden und über 1000 km lang sind.
   SELECT F_NAME from FLUSS WHERE (MEER ="Ostsee" or MEER="Nordsee") and LAENGE>1000
+
+6. Geben Sie für alle Millionenstädte, die in den Tropen liegen, die Namen und ihre Koordinaten an (Die Tropen liegen zwischen 23,27 Grad nördlicher und 23,27 Grad südlicher Breite).
+  SELECT * FROM STADT WHERE EINWOHNER > 1000000 and (BREITE > -23.2700 and BREITE < 23.2700)
