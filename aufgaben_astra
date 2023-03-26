@@ -11,6 +11,7 @@ SELECT name,formel,anteil from atmosphaere, stoff where id_planet like (select i
 
 5. Welche Eigenschaften werden Menschen zugeschrieben, die im Sternbild Löwe (Loewe)
 geboren sind? (Horoskop, Sternbild)
+select eigenschaft from horoskop where id_sternbild like (select id_sternbild from sternbild where name_deutsch="loewe")
 
 6. Welche Weltraummissionen mit welchen besonderen Ereignissen wurden mit Wostok-Raketen
 absolviert? (Mission)
