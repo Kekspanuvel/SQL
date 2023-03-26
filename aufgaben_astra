@@ -15,6 +15,7 @@ geboren sind? (Horoskop, Sternbild)
 
 6. Welche Weltraummissionen mit welchen besonderen Ereignissen wurden mit Wostok-Raketen
 absolviert? (Mission)
+  SELECT name, rem from mission where traegerrakete like '%Wo%'
 
 7. Erstellen Sie eine alphabetische Liste aller noch lebenden Raumfahrer mit deren
 Geburtsdatum. (Raumfahrer)
