@@ -1,2 +1,12 @@
 1. Ermitteln Sie die Namen aller Kontinente.
   SELECT K_NAME FROM KONTINENT 
+  
+2. Gesucht sind alle Inseln (Name) der Inselgruppe der Philippinen. [9]
+  SELECT I_NAME , INSELGRUPPE FROM INSEL WHERE INSELGRUPPE="Philippinen"
+  SELECT I_NAME , INSELGRUPPE FROM INSEL WHERE INSELGRUPPE LIKE 'Ph%'  
+  
+3. Gesucht sind alle Wüsten (Name) der Art Sandwueste mit einer Fläche größer als 25000km2. 
+  SELECT W_NAME, WUESTENART, FLAECHE FROM WUESTE WHERE FLAECHE > 25000 and WUESTENART="Sandwueste"
+  
+4. Gesucht sind alle Berge der Alpen (Beachten Sie, dass die Alpen in Teilgebirge aufgegliedert sind.
+  SELECT B_NAME, GEBIRGE FROM BERG WHERE GEBIRGE LIKE '%lpen'
