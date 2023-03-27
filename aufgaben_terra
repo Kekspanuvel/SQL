@@ -24,4 +24,8 @@
   SELECT L_NAME, L_ID, EINWOHNER from LAND WHERE EINWOHNER > 4500000 ORDER BY EINWOHNER DESC
   
 9. Gesucht ist der Anteil der Meere an der Erdoberfläche (Angabe in Prozent).
+
+
+10. Wie groß ist die Summe der Einwohner der deutschsprachigen Länder Österreich, Deutschland und Schweiz?
+  SELECT SUM(EINWOHNER) FROM LAND WHERE L_ID="D" or L_ID="A" or L_ID="CH"
   
