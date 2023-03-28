@@ -37,7 +37,7 @@
 13. Gesucht sind alle Städte, in denen mehrere Organisationen ihren Sitz haben.
 
 14. Ermitteln Sie die Namen aller Flüsse, die sowohl durch Deutschland als auch durch Österreich fließen
-
+  SELECT DISTINCT G2.F_NAME FROM GEO_FLUSS AS G1 INNER JOIN GEO_FLUSS AS G2 ON G1.F_NAME = G2.F_NAME WHERE G1.L_ID = 'D' AND G2.L_ID = 'A'
 
 
   
