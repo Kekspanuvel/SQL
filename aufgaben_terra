@@ -29,3 +29,4 @@
 10. Wie groß ist die Summe der Einwohner der deutschsprachigen Länder Österreich, Deutschland und Schweiz?
   SELECT SUM(EINWOHNER) FROM LAND WHERE L_ID="D" or L_ID="A" or L_ID="CH"
   
+11. Gesucht sind alle Inselgruppen sowie die Anzahl der zugehörigen Inseln
