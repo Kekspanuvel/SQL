@@ -30,3 +30,14 @@
   SELECT SUM(EINWOHNER) FROM LAND WHERE L_ID="D" or L_ID="A" or L_ID="CH"
   
 11. Gesucht sind alle Inselgruppen sowie die Anzahl der zugehörigen Inseln
+  SELECT COUNT(I_NAME),INSELGRUPPE FROM INSEL GROUP BY INSELGRUPPE
+  
+12. Gesucht sind alle Flüsse mit mehr als zwei an ihnen liegenden Städten, sortiert nach dieser Anzahl
+
+13. Gesucht sind alle Städte, in denen mehrere Organisationen ihren Sitz haben.
+
+14. Ermitteln Sie die Namen aller Flüsse, die sowohl durch Deutschland als auch durch Österreich fließen
+
+
+
+  
